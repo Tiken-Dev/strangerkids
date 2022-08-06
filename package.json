@@ -1,0 +1,30 @@
+{
+  "name": "stranger-kids",
+  "version": "1.0.0",
+  "description": "A little game about Stranger Things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiken-Dev/mokepon.git"
+  },
+  "keywords": [
+    "vanillajs",
+    "javascript",
+    "css",
+    "html",
+    "canvas"
+  ],
+  "author": "TikenDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiken-Dev/mokepon/issues"
+  },
+  "homepage": "https://github.com/Tiken-Dev/mokepon#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}

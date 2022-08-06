@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Kids 🔥💧🌱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="wrapper main" id="main">
+
+        <h1 class="h1">Stranger Kids 👾</h1>
+
+        <section id="seleccionar-personaje" class="section">
+
+            <h2>Elige tu personaje:</h2>
+
+            <!-- Selección de Personajes Dinámico desde JS -->
+            <div class="input-container" id="label-container"></div>
+
+            <img src="">
+            <button id="seleccionar" class="btn btn-select">Continuar</button>
+
+        </section>
+
+        <section id="ver-mapa">
+
+            <div class="canvas-title">
+                <h2>Recorre el mapa con <span id="nombre-personaje"></span></h2>
+                <img id="mapa-section__img">
+                <div id="control-buttons" class="move-buttons">
+                    <button id="up" class="btn btn-control up" onmouseup="detenerMovimiento()" onmousedown="moveUp()">⬆️</button>
+                    <button id="right" class="btn btn-control right" onmouseup="detenerMovimiento()" onmousedown="moveRight()">➡️</button>
+                    <button id="down" class="btn btn-control down" onmouseup="detenerMovimiento()" onmousedown="moveDown()">⬇️</button>
+                    <button id="left" class="btn btn-control left" onmouseup="detenerMovimiento()" onmousedown="moveLeft()">⬅️</button>
+                </div>
+            </div>
+            <canvas id="canvas"></canvas>
+
+        </section>
+
+        <section id="parrafos-section" class="personajes-section">
+            <div id="divImgJugador">
+                <p class="vidas" id="vidas-jugador">0</p>
+                <p id="personaje-jugador"></p>
+            </div>
+            <div id="divImgEnemigo">
+                <p class="vidas" id="vidas-enemigo">0</p>
+                <p id="personaje-enemigo"></p>
+            </div>
+            <div id="divAtaquesJugador">
+                <h3 class="h3">Ataques Jugador:</h3>
+            </div>
+            <div id="divAtaquesEnemigo">
+                <h3 class="h3">Ataques Enemigo:</h3>
+            </div>
+        </section>
+
+
+        <section id="seleccionar-ataque" class="section">
+
+            <h2>Elige tu Ataque:</h2>
+
+        </section>
+
+        <!-- <section id="mensaje" class="section"></section> -->
+
+        <section class="section" id="reiniciar">
+            <button class="btn" id="reiniciar">Reiniciar</button>
+        </section>
+
+    </main>
+
+    <div id="modal-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
